@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+@theme {
+
+  --color-light-blue:#dbedf7;
+  --color-primary:#5d60c1;
+  --color-dark:#1e1e1e;
+  --color-light:#f5f5f5;
+  --font-allura: "Allura", cursive;
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-gradient-to-r from-orange-400 to-orange-500
+    border-2 hover:scale-105 duration-200
+    text-white py-2 px-4 rounded-full font-medium  ;
+  }
+}
+
+@layer utilities {
+  .shadow-1 {
+    @apply drop-shadow-[-15px_15px_15px_rgba(0,0,0,0.5)]  ;
+  }
+}
